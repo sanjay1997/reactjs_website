@@ -1,0 +1,93 @@
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbarrr{
+  padding: 5px 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: teal;
+}
+
+.navbarrr ul{
+  flex:1;
+  text-align: right;
+}
+
+.navbarrr ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.logo{
+font-size: 30px;
+color: whitesmoke;
+}
+
+.mobile-list{
+  display: none;
+}
+
+.lrc{
+  border: 1px solid #fff;
+  padding: 2px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.lrc1{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.desktop-list{
+  margin-bottom: 0rem;
+}
+
+.colsm6{
+  border: 2px solid teal;
+  padding: 9px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.register{
+  background-color: teal !important;
+  color: whitesmoke !important;
+}
+
+.errors{
+  color: red;
+  margin-bottom: 0rem;
+}
+
+@media only screen and (max-width:800px){
+  .navbarrr .desktop-list{
+    display: none;
+  }
+  .mobile-list{
+    background-color: teal;
+    display: block;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0rem;
+  }
+  .mobile-list i{
+    font-size: 7vmin;
+    margin: 0px -6px;
+  }
+}
